@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>		
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/RecipeDef[@Name = "MakeStoneBlocksBase"]/workSpeedStat</xpath>
+				<value>
+				  <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	
+	<!--Patch Stats_Pawns_WorkGeneral.xml-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+		 <li Class="PatchOperationReplace">
+			<xpath>Defs/StatDef[defName = "AnimalGatherYield"]/maxValue</xpath>
+			<value>
+			  <maxValue>2</maxValue>
+			</value>
+		  </li>
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/StatDef[defName = "PlantHarvestYield"]/maxValue</xpath>
+			<value>
+			  <maxValue>2</maxValue>
+			</value>
+		  </li>
+		</operations>
+		
+	</Operation>
+	
+	<!--Patch Stats_Pawns_WorkRecipes.xml-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+		  <!-- Increase efficiency Max -->
+		  <li Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/StatDef[defName = "ButcheryFleshEfficiency"]/maxValue</xpath>
+			<value>
+			  <maxValue>2</maxValue>
+			</value>
+		  </li>
+		  
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/StatDef[defName = "ButcheryMechanoidEfficiency"]/maxValue</xpath>
+			<value>
+			  <maxValue>2</maxValue>
+			</value>
+		  </li>
+		</operations>
+	</Operation>
+	
+	<!--Patch TraderKinds_Orbital_Misc.xml-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>	
+		  <!-- Patch in stock for trade -->
+		  <!-- Gurantee coupon for orbital bulk goods -->
+		  <li Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
+			<value>
+			  <li Class="StockGenerator_SingleDef">
+				<thingDef>Tool_Coupon_Book</thingDef>
+				<countRange>
+				  <min>1</min>
+				  <max>1</max>
+				</countRange>
+			  </li>
+			</value>
+		  </li>
+		  <!-- Add how to, not guranteed but more trader will have it available -->
+		  <li Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
+			<value>
+			  <li Class="StockGenerator_SingleDef">
+				<thingDef>Tool_How_To</thingDef>
+				<countRange>
+				  <min>0</min>
+				  <max>1</max>
+				</countRange>
+			  </li>
+			</value>
+		  </li>
+		  
+		  <li Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName = "Orbital_CombatSupplier"]/stockGenerators</xpath>
+			<value>
+			  <li Class="StockGenerator_SingleDef">
+				<thingDef>Tool_How_To</thingDef>
+				<countRange>
+				  <min>0</min>
+				  <max>1</max>
+				</countRange>
+			  </li>
+			</value>
+		  </li>
+		  
+		  <li Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName = "Orbital_PirateMerchant"]/stockGenerators</xpath>
+			<value>
+			  <li Class="StockGenerator_SingleDef">
+				<thingDef>Tool_How_To</thingDef>
+				<countRange>
+				  <min>0</min>
+				  <max>1</max>
+				</countRange>
+			  </li>
+			</value>
+		  </li>
+		  
+		  <li Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName = "Orbital_Exotic"]/stockGenerators</xpath>
+			<value>
+			  <li Class="StockGenerator_SingleDef">
+				<thingDef>Tool_How_To</thingDef>
+				<countRange>
+				  <min>0</min>
+				  <max>1</max>
+				</countRange>
+			  </li>
+			</value>
+		  </li>
+		  
+		  <!-- Gurantee one encyclopedia on exotic trade ship -->
+		  <li Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName = "Orbital_Exotic"]/stockGenerators</xpath>
+			<value>
+			  <li Class="StockGenerator_SingleDef">
+				<thingDef>Tool_Encyclopedia</thingDef>
+				<countRange>
+				  <min>1</min>
+				  <max>1</max>
+				</countRange>
+			  </li>
+			</value>
+		  </li>
+		</operations>
+	</Operation>
+	
+	<!--Patch TraderKinds_Caravan_Outlander.xml-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+		  <!-- Coupon not guranteed -->
+		  <li Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName = "Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+			<value>
+			  <li Class="StockGenerator_SingleDef">
+				<thingDef>Tool_Coupon_Book</thingDef>
+				<countRange>
+				  <min>0</min>
+				  <max>1</max>
+				</countRange>
+			  </li>
+			</value>
+		  </li>
+		  <!--How to -->
+		  <li Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName = "Caravan_Outlander_CombatSupplier"]/stockGenerators</xpath>
+			<value>
+			  <li Class="StockGenerator_SingleDef">
+				<thingDef>Tool_How_To</thingDef>
+				<countRange>
+				  <min>0</min>
+				  <max>1</max>
+				</countRange>
+			  </li>
+			</value>
+		  </li>
+		  
+		  <li Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName = "Caravan_Outlander_PirateMerchant"]/stockGenerators</xpath>
+			<value>
+			  <li Class="StockGenerator_SingleDef">
+				<thingDef>Tool_How_To</thingDef>
+				<countRange>
+				  <min>0</min>
+				  <max>1</max>
+				</countRange>
+			  </li>
+			</value>
+		  </li>
+		  <!-- Not guranteed to have encyclopedia -->
+		  <li Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName = "Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+			<value>
+			  <li Class="StockGenerator_SingleDef">
+				<thingDef>Tool_Encyclopedia</thingDef>
+				<countRange>
+				  <min>0</min>
+				  <max>1</max>
+				</countRange>
+			  </li>
+			</value>
+		  </li>
+		</operations>
+	</Operation>
+	
+	<!--TraderKinds_Base_Outlander.xml-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+		  <li Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+			<value>
+			  <li Class="StockGenerator_SingleDef">
+				<thingDef>Tool_How_To</thingDef>
+				<countRange>
+				  <min>0</min>
+				  <max>1</max>
+				</countRange>
+			  </li>
+			</value>
+		  </li>
+		</operations>
+	</Operation>
+	
+</Patch>

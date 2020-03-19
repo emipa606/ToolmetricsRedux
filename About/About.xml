@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+    <name>Toolmetrics Redux (Continued)</name>
+  	<packageId>Mlie.ToolmetricsRedux</packageId>
+	<author>Mlie</author>
+	<url>https://github.com/emipa606/ToolmetricsRedux</url>
+	<supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+	</supportedVersions>
+	<modDependenciesByVersion>
+		<v1.1>
+			<li>
+				<packageId>Alias.DegeneralizeWork</packageId>
+				<displayName>De-generalize Work</displayName>
+				<steamWorkshopUrl>steam://url/CommunityFilePage/2011655761</steamWorkshopUrl>
+				<downloadUrl>https://github.com/Alias44/Degeneralize-Work/releases/latest</downloadUrl>
+			</li>
+		</v1.1>
+	</modDependenciesByVersion>
+	<loadAfter>
+		<li>Alias.DegeneralizeWork</li>
+	</loadAfter>
+	<description>Update of Chronometrics,Porter: BrokenValkyries mod for RimWorld 1.1
+https://steamcommunity.com/sharedfiles/filedetails/?id=1812077718
+
+Support-chat:
+https://discord.gg/SuhwVpM
+
+Non-steam version:
+https://github.com/emipa606/ToolmetricsRedux
+	
+--- Original Description ---
+Work Tools for Pawns
+This mod adds 41 weapon-slot hand tools aimed at non-combat usage for pawns to equip.
+
+ToolMetric is created by Chronometric, definitely, 100%, why would I lie here.
+The license asked me to word it that way.
+
+Unofficial v1.4 for Beta 189
+
+I hadn't found time to fully test it, report any bugs or feature not working.
+
+Compatibility:
+
+Skilled stonecutting must be loaded after this one.
+
+Changes Made:
+
+* Overhaul made to melee definition, due to change introduce to B18.
+* Buff to animal related tool, due to the way tame and train chance are actually calculated.
+* Brick Saw now affect sculpting.
+* Updated definition to 1.0
+* Some weight have been changed.
+* Trade only tool now shows up in trade. Only bulk trader carry coupon and only exotic trader carry encyclopedia. How To are sold by several trader except tribal.
+* Tools kits apparel, free your pawns hand. There are several different tool kits made to tailor to specific jobs.
+* Added animal husbandry kit.
+* New stats added to tool such as mech dissambly efficiency and mining yield.
+
+
+
+Original description
+
+This mod adds 41 weapon-slot hand tools aimed at non-combat usage for pawns to equip.
+
+
+Goals:
+
+✔ Offer meaningful choices to the equipment system by giving pawns desirable non-combat options that compete for space and resources with combat options
+
+✔ Provide more meaning to certain pre-existing mechanics, such as equipment racks, smithing, crafting spots and component tables.
+
+✔ Allow for deeper end games with fewer pawns by increasing the ability of specialists pawns with sufficient resources as support.
+
+✔ Makes establishing multiple colonies easier and more viable.
+
+
+Implementation:
+
+* New weapons category, "Tools", that are equippable by pawns.
+
+* 41 new tools, each of which provides benefits to a specific type of role within the colony, such as tailoring or plant cutting.
+
+* Tools are balanced as melee weapons.
+
+* Tools are tiered by technologies, and available to craft from smithing, tailoring, crafting spots, component benches, or machining tables.
+
+* Raiders will occasionally spawn with tools, especially in low value raids or disorganized raiding parties. The majority of raiders will keep proper weapons.
+
+* Tools are largely makeable from any available stuff, as opposed to specific recipes.
+
+Announcement
+
+Given my current work schedule and lack of motivation I decided I am unable to continue to work on Rimworld mods and will be making an exit in the mod scene indefinetely.
+
+I hereby will be allowing my work to be continued and published by other. I ask only for credit. This will apply to all my current workshop.</description>
+
+</ModMetaData>
