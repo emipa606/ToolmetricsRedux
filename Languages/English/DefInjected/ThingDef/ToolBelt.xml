@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Smartphone -->
+
+  <Tool_Smartphone.label>smartphone</Tool_Smartphone.label>
+  <Tool_Smartphone.description>Smartphones are cheap, portable, and widely available, but your pawns might have problems letting go.</Tool_Smartphone.description>
+
+
+  <!-- Backpack -->
+
+  <Tool_Backpack.label>backpack</Tool_Backpack.label>
+  <Tool_Backpack.description>An extra bag that you can carry with you to help you move more things.</Tool_Backpack.description>
+
+
+  <!-- Duffel Bag -->
+
+  <Tool_Duffel_Bag.label>duffel bag</Tool_Duffel_Bag.label>
+  <Tool_Duffel_Bag.description>A large bag you can use to carry many more things, but it's a little awkward.</Tool_Duffel_Bag.description>
+
+
+  <!-- Combat Kit -->
+
+  <TM_Combat_Kit.label>Combat Kit</TM_Combat_Kit.label>
+  <TM_Combat_Kit.description>Consist of holster, ammo belt and weapon maintenance kit. Give some edge in combat</TM_Combat_Kit.description>
+
+
+  <!-- Chemistry Kit -->
+
+  <TM_Chemistry_Kit.label>Chemistry Kit</TM_Chemistry_Kit.label>
+  <TM_Chemistry_Kit.description>Contains flasks, beaker, stirrer, catalyst and heating plate. Great for speeding up brewing and drug making.</TM_Chemistry_Kit.description>
+
+
+  <!-- Chef kit has mostly knife -->
+
+  <TM_Chef_Kit.label>Chef Kit</TM_Chef_Kit.label>
+  <TM_Chef_Kit.description>Belt contain all your chef needs.</TM_Chef_Kit.description>
+
+
+  <!-- Cook kit -->
+
+  <TM_Cook_Kit.label>Cook Kit</TM_Cook_Kit.label>
+  <TM_Cook_Kit.description>Make drug and food faster.</TM_Cook_Kit.description>
+
+
+  <!-- Garden Kit -->
+
+  <TM_Garden_Kit.label>Garden Kit</TM_Garden_Kit.label>
+  <TM_Garden_Kit.description>This kit contain all your gardening needs.</TM_Garden_Kit.description>
+
+
+  <!-- Doctor Kit -->
+
+  <TM_Doctor_Kit.label>Doctor Kit</TM_Doctor_Kit.label>
+  <TM_Doctor_Kit.description>An upgrade to first aid kit, free up your hand.</TM_Doctor_Kit.description>
+
+
+  <!-- Animal Kit -->
+
+  <TM_Animal_Kit.label>Animal Kit</TM_Animal_Kit.label>
+  <TM_Animal_Kit.description>All your animal training, taming and husbandry need.</TM_Animal_Kit.description>
+
+
+  <!-- Constructor Kit -->
+
+  <TM_Constructor_Kit.label>Constructor Kit</TM_Constructor_Kit.label>
+  <TM_Constructor_Kit.description>Belt contain all your construction and mining need.</TM_Constructor_Kit.description>
+
+
+  <!-- Crafting Kit -->
+
+  <TM_Crafting_Kit.label>Crafting Kit</TM_Crafting_Kit.label>
+  <TM_Crafting_Kit.description>Belt contain tools to assist in crafting and forging.</TM_Crafting_Kit.description>
+
+
+  <!-- Traveler Pack -->
+
+  <TM_Traveler_Pack.label>Traveler pack</TM_Traveler_Pack.label>
+  <TM_Traveler_Pack.description>All your personal comfort need in one pack, great for journey.</TM_Traveler_Pack.description>
+
+
+  <!-- Tool Kit -->
+
+  <TM_Tool_Belt.label>Tool Belt</TM_Tool_Belt.label>
+  <TM_Tool_Belt.description>General purpose belt, it allows to perform task faster but provide no further bonuses.</TM_Tool_Belt.description>
+
+
+  <!-- Social Wear -->
+
+  <TM_Social_Wear.label>Social Wear</TM_Social_Wear.label>
+  <TM_Social_Wear.description>Social wear that helps with socialising and walking.</TM_Social_Wear.description>
+
+
+</LanguageData>
