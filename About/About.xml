@@ -7,6 +7,7 @@
   <supportedVersions>
     <li>1.0</li>
     <li>1.1</li>
+    <li>1.2</li>
   </supportedVersions>
   <modDependenciesByVersion>
     <v1.1>
@@ -66,13 +67,13 @@ This mod adds 41 weapon-slot hand tools aimed at non-combat usage for pawns to e
 
 Goals:
 
-✔ Offer meaningful choices to the equipment system by giving pawns desirable non-combat options that compete for space and resources with combat options
+? Offer meaningful choices to the equipment system by giving pawns desirable non-combat options that compete for space and resources with combat options
 
-✔ Provide more meaning to certain pre-existing mechanics, such as equipment racks, smithing, crafting spots and component tables.
+? Provide more meaning to certain pre-existing mechanics, such as equipment racks, smithing, crafting spots and component tables.
 
-✔ Allow for deeper end games with fewer pawns by increasing the ability of specialists pawns with sufficient resources as support.
+? Allow for deeper end games with fewer pawns by increasing the ability of specialists pawns with sufficient resources as support.
 
-✔ Makes establishing multiple colonies easier and more viable.
+? Makes establishing multiple colonies easier and more viable.
 
 
 Implementation:
