@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Toolmetrics Redux (Continued)</name>
   <packageId>Mlie.ToolmetricsRedux</packageId>
@@ -8,6 +8,7 @@
     <li>1.0</li>
     <li>1.1</li>
     <li>1.2</li>
+    <li>1.3</li>
   </supportedVersions>
   <modDependenciesByVersion>
     <v1.1>
@@ -22,25 +23,33 @@
   <loadAfter>
     <li>Alias.DegeneralizeWork</li>
   </loadAfter>
-  <description>Update of Chronometrics,Porter: BrokenValkyries mod
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of Chronometrics,Porter: BrokenValkyries mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1526599749
 
-Support-chat:
-https://invite.gg/Mlie
+Excellent guide made by Psyra:
+https://steamcommunity.com/sharedfiles/filedetails/?id=2060184114
 
-Non-steam version:
-https://github.com/emipa606/ToolmetricsRedux
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+
+[table]
+	[tr]
+		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/ToolmetricsRedux][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+	[/tr]
+[/table]
 	
---- Original Description ---
+[img]https://i.imgur.com/NOW7jU1.png[/img]
+
 Work Tools for Pawns
-This mod adds 41 weapon-slot hand tools aimed at non-combat usage for pawns to equip.
+This mod adds 41 weapon-slot hand tools aimed at non-combat usage for pawns to equip. 
 
 ToolMetric is created by Chronometric, definitely, 100%, why would I lie here.
 The license asked me to word it that way.
 
 Unofficial v1.4 for Beta 189
 
-I hadn't found time to fully test it, report any bugs or feature not working.
+I hadn&apos;t found time to fully test it, report any bugs or feature not working.
 
 Compatibility:
 
@@ -62,23 +71,23 @@ Changes Made:
 
 Original description
 
-This mod adds 41 weapon-slot hand tools aimed at non-combat usage for pawns to equip.
+This mod adds 41 weapon-slot hand tools aimed at non-combat usage for pawns to equip. 
 
 
 Goals:
 
-? Offer meaningful choices to the equipment system by giving pawns desirable non-combat options that compete for space and resources with combat options
+✔ Offer meaningful choices to the equipment system by giving pawns desirable non-combat options that compete for space and resources with combat options
 
-? Provide more meaning to certain pre-existing mechanics, such as equipment racks, smithing, crafting spots and component tables.
+✔ Provide more meaning to certain pre-existing mechanics, such as equipment racks, smithing, crafting spots and component tables.
 
-? Allow for deeper end games with fewer pawns by increasing the ability of specialists pawns with sufficient resources as support.
+✔ Allow for deeper end games with fewer pawns by increasing the ability of specialists pawns with sufficient resources as support.
 
-? Makes establishing multiple colonies easier and more viable.
+✔ Makes establishing multiple colonies easier and more viable.
 
 
 Implementation:
 
-* New weapons category, "Tools", that are equippable by pawns.
+* New weapons category, &quot;Tools&quot;, that are equippable by pawns.
 
 * 41 new tools, each of which provides benefits to a specific type of role within the colony, such as tailoring or plant cutting.
 
@@ -90,9 +99,22 @@ Implementation:
 
 * Tools are largely makeable from any available stuff, as opposed to specific recipes.
 
-Announcement
+[b]Announcement[/b]
 
 Given my current work schedule and lack of motivation I decided I am unable to continue to work on Rimworld mods and will be making an exit in the mod scene indefinetely.
 
-I hereby will be allowing my work to be continued and published by other. I ask only for credit. This will apply to all my current workshop.</description>
+I hereby will be allowing my work to be continued and published by other. I ask only for credit. This will apply to all my current workshop.
+
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
 </ModMetaData>
+
