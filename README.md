@@ -31,7 +31,7 @@ The license asked me to word it that way.
 
 Unofficial v1.4 for Beta 189
 
-I hadn&apos;t found time to fully test it, report any bugs or feature not working.
+I hadn&amp;apos;t found time to fully test it, report any bugs or feature not working.
 
 Compatibility:
 
@@ -69,7 +69,7 @@ Goals:
 
 Implementation:
 
-* New weapons category, &quot;Tools&quot;, that are equippable by pawns.
+* New weapons category, &amp;quot;Tools&amp;quot;, that are equippable by pawns.
 
 * 41 new tools, each of which provides benefits to a specific type of role within the colony, such as tailoring or plant cutting.
 
@@ -98,6 +98,7 @@ I hereby will be allowing my work to be continued and published by other. I ask 
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 
