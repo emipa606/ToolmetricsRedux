@@ -1,5 +1,8 @@
 # Changelog for ToolmetricsRedux
 
+1.0.6.0 - CE-patch is now included in the main CE-mod instead
+
+
 1.0.5.0 - Added CE-support based on 1.0 patch by Shadowpaw
 
 

@@ -1,6 +1,6 @@
 # ToolmetricsRedux
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of Chronometrics,Porter: BrokenValkyries mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1526599749
@@ -8,19 +8,12 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1526599749
 Excellent guide made by Psyra:
 https://steamcommunity.com/sharedfiles/filedetails/?id=2060184114
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+- [strike]Added CE support based on https://steamcommunity.com/sharedfiles/filedetails/?id=1667299291]Toolmetric CE Patch by Shadowpaw[/strike] CE-patches now included in the main CE-mod instead
 
+![Image](https://i.imgur.com/pufA0kM.png)
 
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/ToolmetricsRedux]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 
 Work Tools for Pawns
@@ -31,7 +24,7 @@ The license asked me to word it that way.
 
 Unofficial v1.4 for Beta 189
 
-I hadn&amp;apos;t found time to fully test it, report any bugs or feature not working.
+I hadn&apos;t found time to fully test it, report any bugs or feature not working.
 
 Compatibility:
 
@@ -69,7 +62,7 @@ Goals:
 
 Implementation:
 
-* New weapons category, &amp;quot;Tools&amp;quot;, that are equippable by pawns.
+* New weapons category, &quot;Tools&quot;, that are equippable by pawns.
 
 * 41 new tools, each of which provides benefits to a specific type of role within the colony, such as tailoring or plant cutting.
 
@@ -88,7 +81,7 @@ Given my current work schedule and lack of motivation I decided I am unable to c
 I hereby will be allowing my work to be continued and published by other. I ask only for credit. This will apply to all my current workshop.
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
@@ -98,7 +91,6 @@ I hereby will be allowing my work to be continued and published by other. I ask 
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
-
 
 
 

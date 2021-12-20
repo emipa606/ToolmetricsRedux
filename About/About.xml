@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Toolmetrics Redux (Continued)</name>
   <packageId>Mlie.ToolmetricsRedux</packageId>
@@ -24,14 +24,16 @@
     <li>Alias.DegeneralizeWork</li>
     <li>CETeam.CombatExtended</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of Chronometrics,Porter: BrokenValkyries mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1526599749
 
 Excellent guide made by Psyra:
 https://steamcommunity.com/sharedfiles/filedetails/?id=2060184114
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+- [strike]Added CE support based on [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1667299291]Toolmetric CE Patch[/url] by Shadowpaw[/strike] CE-patches now included in the main CE-mod instead
+
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
 	[tr]
@@ -40,7 +42,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2060184114
 	[/tr]
 [/table]
 	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
 
 Work Tools for Pawns
 This mod adds 41 weapon-slot hand tools aimed at non-combat usage for pawns to equip. 
@@ -107,7 +109,7 @@ Given my current work schedule and lack of motivation I decided I am unable to c
 I hereby will be allowing my work to be continued and published by other. I ask only for credit. This will apply to all my current workshop.
 
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -116,6 +118,5 @@ I hereby will be allowing my work to be continued and published by other. I ask 
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
-
 </description>
 </ModMetaData>
