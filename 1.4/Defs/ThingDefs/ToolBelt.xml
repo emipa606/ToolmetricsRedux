@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="TM_BaseToolBelt" ParentName="ApparelNoQualityBase" Abstract="True">
+    <pathCost>10</pathCost>
+    <statBases>
+      <MaxHitPoints>125</MaxHitPoints>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <SellPriceFactor>0.4</SellPriceFactor>
+      <WorkToMake>5000</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <techLevel>Industrial</techLevel>
+    <!--Every tool belt needs fabric for the belt + pouch-->
+    <costStuffCount>30</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <!--All kits are made at tailoring bench-->
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>Toolbelt</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+  <!--Constructor and gardener tools are too big for belts, make them kit bags like golf club-->
+  <!-- ============================Smartphone================================== -->
+  <ThingDef ParentName="TM_BaseToolBelt">
+    <defName>Tool_Smartphone</defName>
+    <label>smartphone</label>
+    <description>Smartphones are cheap, portable, and widely available, but your pawns might have problems letting go.</description>
+    <graphicData>
+      <texPath>Tools/Smartphone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+    </stuffCategories>
+    <costStuffCount>0</costStuffCount>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <Gold>50</Gold>
+      <ComponentIndustrial>15</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>0.2</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+      <GlobalLearningFactor>0.8</GlobalLearningFactor>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Silver</li>
+          <li>Gold</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <techLevel>Spacer</techLevel>
+  </ThingDef>
+  <!-- ============================Backpack================================== -->
+  <ThingDef ParentName="TM_BaseToolBelt">
+    <defName>Tool_Backpack</defName>
+    <label>backpack</label>
+    <description>An extra bag that you can carry with you to help you move more things.</description>
+    <graphicData>
+      <texPath>Tools/Backpack</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>40</costStuffCount>
+    <statBases>
+      <WorkToMake>6500</WorkToMake>
+      <Mass>0.2</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <CarryingCapacity>75</CarryingCapacity>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  <!-- ============================Duffel Bag================================== -->
+  <ThingDef ParentName="TM_BaseToolBelt">
+    <defName>Tool_Duffel_Bag</defName>
+    <label>duffel bag</label>
+    <description>A large bag you can use to carry many more things, but it's a little awkward.</description>
+    <graphicData>
+      <texPath>Tools/Duffel_Bag</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>0.3</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <CarryingCapacity>125</CarryingCapacity>
+      <MoveSpeed>-0.1</MoveSpeed>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  <!--Combat Kit -->
+  <ThingDef ParentName="TM_BaseToolBelt">
+    <defName>TM_Combat_Kit</defName>
+    <label>Combat Kit</label>
+    <description>Consist of holster, ammo belt and weapon maintenance kit. Give some edge in combat</description>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+      <texPath>Tools/TM_CombatKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>1.5</Mass>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Silver</li>
+          <li>Gold</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <costList>
+      <Plasteel>30</Plasteel>
+      <Steel>20</Steel>
+      <Silver>2</Silver>
+    </costList>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <equippedStatOffsets>
+      <AimingDelayFactor>-0.25</AimingDelayFactor>
+      <AccuracyTouch>0.04</AccuracyTouch>
+      <AccuracyShort>0.04</AccuracyShort>
+      <AccuracyMedium>0.04</AccuracyMedium>
+      <AccuracyLong>0.04</AccuracyLong>
+      <MeleeHitChance>0.04</MeleeHitChance>
+    </equippedStatOffsets>
+  </ThingDef>
+  <!--Chemistry Kit-->
+  <ThingDef ParentName="TM_BaseToolBelt">
+    <defName>TM_Chemistry_Kit</defName>
+    <label>Chemistry Kit</label>
+    <!--For now have a generic placeholder-->
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+      <texPath>Tools/ToolBelt_Generic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <description>Contains flasks, beaker, stirrer, catalyst and heating plate. Great for speeding up brewing and drug making.</description>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <MarketValue>900</MarketValue>
+      <Mass>1.5</Mass>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Silver</li>
+          <li>Gold</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <costList>
+      <Plasteel>30</Plasteel>
+      <Uranium>1</Uranium>
+      <Silver>2</Silver>
+    </costList>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <equippedStatOffsets>
+      <DrugSynthesisSpeed>0.5</DrugSynthesisSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+  <!-- Chef kit has mostly knife -->
+  <ThingDef ParentName="TM_BaseToolBelt">
+    <defName>TM_Chef_Kit</defName>
+    <label>Chef Kit</label>
+    <description>Belt contain all your chef needs.</description>
+    <graphicData>
+      <texPath>Tools/TM_ChefBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <Mass>2.3</Mass>
+    </statBases>
+    <costList>
+      <Tool_Skinning_Knife>1</Tool_Skinning_Knife>
+      <Tool_Cleaver>1</Tool_Cleaver>
+      <Tool_Chefs_Knife>1</Tool_Chefs_Knife>
+    </costList>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <equippedStatOffsets>
+      <CookSpeed>0.35</CookSpeed>
+      <FoodPoisonChance>-0.2</FoodPoisonChance>
+      <ButcheryFleshEfficiency>0.3</ButcheryFleshEfficiency>
+      <ButcheryFleshSpeed>0.35</ButcheryFleshSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+  <!--Cook kit-->
+  <ThingDef ParentName="TM_BaseToolBelt">
+    <defName>TM_Cook_Kit</defName>
+    <label>Cook Kit</label>
+    <description>Make drug and food faster.</description>
+    <graphicData>
+      <texPath>Tools/TM_CookBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1700</MarketValue>
+      <Mass>3.9</Mass>
+    </statBases>
+    <costStuffCount>10</costStuffCount>
+    <costList>
+      <TM_Chemistry_Kit>1</TM_Chemistry_Kit>
+      <TM_Chef_Kit>1</TM_Chef_Kit>
+    </costList>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <equippedStatOffsets>
+      <DrugSynthesisSpeed>0.5</DrugSynthesisSpeed>
+      <CookSpeed>0.25</CookSpeed>
+      <FoodPoisonChance>-0.2</FoodPoisonChance>
+      <ButcheryFleshEfficiency>0.3</ButcheryFleshEfficiency>
+      <ButcheryFleshSpeed>0.3</ButcheryFleshSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+  <!-- Garden Kit-->
+  <ThingDef ParentName="TM_BaseToolBelt">
+    <defName>TM_Garden_Kit</defName>
+    <label>Garden Kit</label>
+    <description>This kit contain all your gardening needs.</description>
+    <graphicData>
+      <texPath>Tools/TM_GardenKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>5.1</Mass>
+    </statBases>
+    <costList>
+      <Tool_Sickle>1</Tool_Sickle>
+      <Tool_Scythe>1</Tool_Scythe>
+      <Tool_Shovel>1</Tool_Shovel>
+      <Tool_Saw>1</Tool_Saw>
+      <Tool_Axe>1</Tool_Axe>
+    </costList>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <equippedStatOffsets>
+      <PlantHarvestYield>0.5</PlantHarvestYield>
+      <PlantWorkSpeed>0.5</PlantWorkSpeed>
+      <MiningSpeed>0.15</MiningSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+  <!-- Doctor Kit -->
+  <ThingDef ParentName="TM_BaseToolBelt">
+    <defName>TM_Doctor_Kit</defName>
+    <label>Doctor Kit</label>
+    <description>An upgrade to first aid kit, free up your hand.</description>
+    <graphicData>
+      <texPath>Tools/TM_DoctorKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>2.8</Mass>
+    </statBases>
+    <costList>
+      <Tool_First_Aid_Kit>1</Tool_First_Aid_Kit>
+      <Tool_Scapel>1</Tool_Scapel>
+      <MedicineIndustrial>1</MedicineIndustrial>
+    </costList>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <equippedStatOffsets>
+      <ImmunityGainSpeed>0.05</ImmunityGainSpeed>
+      <MedicalTendQuality>0.25</MedicalTendQuality>
+      <MedicalTendSpeed>0.75</MedicalTendSpeed>
+      <MedicalSurgerySuccessChance>0.2</MedicalSurgerySuccessChance>
+      <MedicalOperationSpeed>0.5</MedicalOperationSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+  <!-- Animal Kit -->
+  <ThingDef ParentName="TM_BaseToolBelt">
+    <defName>TM_Animal_Kit</defName>
+    <label>Animal Kit</label>
+    <description>All your animal training, taming and husbandry need.</description>
+    <graphicData>
+      <texPath>Tools/TM_AnimalBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>950</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <costList>
+      <Tool_Whip>1</Tool_Whip>
+      <Tool_Whistle>1</Tool_Whistle>
+      <Tool_Leash>1</Tool_Leash>
+      <Tool_Animal_Husbandry>1</Tool_Animal_Husbandry>
+    </costList>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <equippedStatOffsets>
+      <TameAnimalChance>1</TameAnimalChance>
+      <TrainAnimalChance>1</TrainAnimalChance>
+      <AnimalGatherYield>0.25</AnimalGatherYield>
+      <AnimalGatherSpeed>0.75</AnimalGatherSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+  <!-- Constructor Kit -->
+  <ThingDef ParentName="TM_BaseToolBelt">
+    <defName>TM_Constructor_Kit</defName>
+    <label>Constructor Kit</label>
+    <description>Belt contain all your construction and mining need.</description>
+    <graphicData>
+      <texPath>Tools/TM_ConstructorBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1100</MarketValue>
+      <Mass>3.7</Mass>
+    </statBases>
+    <costList>
+      <Tool_Hammer>1</Tool_Hammer>
+      <Tool_Trowel>1</Tool_Trowel>
+      <Tool_Pickaxe>1</Tool_Pickaxe>
+      <Tool_Screwdriver>1</Tool_Screwdriver>
+      <Tool_Crowbar>1</Tool_Crowbar>
+    </costList>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <equippedStatOffsets>
+      <ConstructionSpeed>0.35</ConstructionSpeed>
+      <SmoothingSpeed>1</SmoothingSpeed>
+      <MiningSpeed>0.35</MiningSpeed>
+      <MiningYield>0.3</MiningYield>
+      <ConstructSuccessChance>1</ConstructSuccessChance>
+      <FixBrokenDownBuildingSuccessChance>1</FixBrokenDownBuildingSuccessChance>
+      <ButcheryMechanoidEfficiency>0.1</ButcheryMechanoidEfficiency>
+      <ButcheryMechanoidSpeed>0.25</ButcheryMechanoidSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+  <!-- Crafting Kit -->
+  <ThingDef ParentName="TM_BaseToolBelt">
+    <defName>TM_Crafting_Kit</defName>
+    <label>Crafting Kit</label>
+    <description>Belt contain tools to assist in crafting and forging.</description>
+    <graphicData>
+      <texPath>Tools/ToolBelt_Generic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <Mass>2.6</Mass>
+    </statBases>
+    <costList>
+      <Tool_Thimble>1</Tool_Thimble>
+      <Tool_Forge_Hammer>1</Tool_Forge_Hammer>
+      <Tool_Chisel>1</Tool_Chisel>
+    </costList>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <equippedStatOffsets>
+      <TailoringSpeed>0.35</TailoringSpeed>
+      <SmithingSpeed>0.35</SmithingSpeed>
+      <StonecuttingSpeed>0.35</StonecuttingSpeed>
+      <SculptingSpeed>0.35</SculptingSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+  <!-- Traveler Pack -->
+  <ThingDef ParentName="TM_BaseToolBelt">
+    <defName>TM_Traveler_Pack</defName>
+    <label>Traveler pack</label>
+    <description>All your personal comfort need in one pack, great for journey.</description>
+    <graphicData>
+      <texPath>Tools/TM_TravelerPack</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>650</MarketValue>
+      <Mass>1.6</Mass>
+    </statBases>
+    <costList>
+      <Tool_Pillow>1</Tool_Pillow>
+      <Tool_Blanket>1</Tool_Blanket>
+      <Tool_Spoon>1</Tool_Spoon>
+      <Tool_Fork>1</Tool_Fork>
+      <Tool_Fan>1</Tool_Fan>
+    </costList>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <equippedStatOffsets>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+      <EatingSpeed>1.5</EatingSpeed>
+      <ComfyTemperatureMax>10</ComfyTemperatureMax>
+      <MentalBreakThreshold>-0.04</MentalBreakThreshold>
+      <ImmunityGainSpeed>0.02</ImmunityGainSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+  <!-- Tool Kit -->
+  <ThingDef ParentName="TM_BaseToolBelt">
+    <defName>TM_Tool_Belt</defName>
+    <label>Tool Belt</label>
+    <description>General purpose belt, it allows to perform task faster but provide no further bonuses.</description>
+    <graphicData>
+      <texPath>Tools/ToolBelt_Generic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>750</MarketValue>
+      <Mass>5</Mass>
+    </statBases>
+    <costList>
+      <Tool_Toolkit>1</Tool_Toolkit>
+    </costList>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+    </equippedStatOffsets>
+  </ThingDef>
+  <!-- Social Wear -->
+  <ThingDef ParentName="TM_BaseToolBelt">
+    <defName>TM_Social_Wear</defName>
+    <label>Social Wear</label>
+    <description>Social wear that helps with socialising and walking.</description>
+    <graphicData>
+      <texPath>Tools/TM_SocialWear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>750</MarketValue>
+      <Mass>1.6</Mass>
+    </statBases>
+    <costList>
+      <Tool_Flowers>1</Tool_Flowers>
+      <Tool_Walking_Cane>1</Tool_Walking_Cane>
+    </costList>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <equippedStatOffsets>
+      <SocialImpact>0.3</SocialImpact>
+      <TradePriceImprovement>0.2</TradePriceImprovement>
+      <NegotiationAbility>0.35</NegotiationAbility>
+      <MoveSpeed>0.15</MoveSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+</Defs>

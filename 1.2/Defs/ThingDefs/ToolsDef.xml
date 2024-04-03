@@ -1,0 +1,1563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="BaseTool" ParentName="BaseWeapon" Abstract="True">
+    <pathCost>10</pathCost>
+    <statBases>
+      <Flammability>0.1</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <weaponTags>
+      <li>Melee</li>
+      <li>Tool</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Tools</li>
+    </thingCategories>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+  <ThingDef Name="BaseTool_Forged" ParentName="BaseTool" Abstract="True">
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Silver</li>
+          <li>Gold</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef Name="BaseTool_Machined" ParentName="BaseTool" Abstract="True">
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Silver</li>
+          <li>Gold</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <techLevel>Industrial</techLevel>
+  </ThingDef>
+  <ThingDef Name="BaseTool_Tailored" ParentName="BaseTool" Abstract="True">
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef Name="BaseTool_Crafted" ParentName="BaseTool" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smelt</effectWorking>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+    <techLevel>Neolithic</techLevel>
+  </ThingDef>
+  <ThingDef Name="BaseTool_Components" ParentName="BaseTool" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smelt</effectWorking>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+    <techLevel>Spacer</techLevel>
+  </ThingDef>
+  <!-- Stats
+  Tech Levels: 
+    Neolithic
+    Medieval
+    Industrial
+    Spacer
+
+  Work Amounts:
+    Hats: 5000
+    Power Helmet: 40000
+    Clothes: 6500
+    Duster: 20000
+    Armor: 170000
+    Guns: 15000-30000
+    Spacer Gun: 100000
+    Melee Basic: 500
+    Forging: 10000
+    Advanced Melee: 20000
+    Bows: 10000-18000
+
+  Things to add maybe
+    <techLevel>Neolithic</techLevel>
+
+    <costList>
+      <Cloth>60</Cloth>
+      <Medicine>2</Medicine>
+    </costList>
+
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+  
+    <statBases>
+      <power>6</power>
+      <cooldownTime>2</cooldownTime>
+    </statBases>  
+
+    <MarketValue>300</MarketValue>
+  -->
+  <!-- Tailored -->
+  <!-- ============================Pillow================================== -->
+  <ThingDef ParentName="BaseTool_Tailored">
+    <defName>Tool_Pillow</defName>
+    <label>pillow</label>
+    <description>Comfy and soft, helps you get a good night sleep.</description>
+    <graphicData>
+      <texPath>Tools/Pillow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>30</costStuffCount>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <Mass>0.5</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MentalBreakThreshold>-0.04</MentalBreakThreshold>
+      <ImmunityGainSpeed>0.02</ImmunityGainSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>weight</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Blanket================================== -->
+  <ThingDef ParentName="BaseTool_Tailored">
+    <defName>Tool_Blanket</defName>
+    <label>blanket</label>
+    <description>A comfy security blanket. Keeps you warm, and keeps you happy.</description>
+    <graphicData>
+      <texPath>Tools/Blanket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>100</costStuffCount>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <Mass>0.5</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>sheet</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <cooldownTime>2</cooldownTime>
+        <power>1</power>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Leash================================== -->
+  <ThingDef ParentName="BaseTool_Tailored">
+    <defName>Tool_Leash</defName>
+    <label>leash</label>
+    <description>Keep those pets in hand, and take those reluctant animals back to the camp with this handy tool.</description>
+    <graphicData>
+      <texPath>Tools/Leash</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>10</costStuffCount>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <Mass>0.1</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <TameAnimalChance>0.25</TameAnimalChance>
+      <TrainAnimalChance>0.3</TrainAnimalChance>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>line</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <cooldownTime>2</cooldownTime>
+        <power>1</power>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Bandage================================== -->
+  <ThingDef ParentName="BaseTool_Tailored">
+    <defName>Tool_Bandage</defName>
+    <label>bandage</label>
+    <description>Clean sterile cloth, rolled and ready to stop your pawns from bleeding out on the floor.</description>
+    <graphicData>
+      <texPath>Tools/Bandage</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>15</costStuffCount>
+    <statBases>
+      <WorkToMake>200</WorkToMake>
+      <Mass>0.1</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MedicalTendQuality>0.1</MedicalTendQuality>
+      <MedicalTendSpeed>0.3</MedicalTendSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>covered fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <cooldownTime>2</cooldownTime>
+        <power>1</power>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- Crafted -->
+  <!-- ============================Walking Cane================================== -->
+  <ThingDef ParentName="BaseTool_Crafted">
+    <defName>Tool_Walking_Cane</defName>
+    <label>walking cane</label>
+    <description>A handy, familiar walking cane to help you cross terrain swiftly.</description>
+    <graphicData>
+      <texPath>Tools/Walking_Cane</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>15</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>0.8</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.15</MoveSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>Shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <cooldownTime>2.6</cooldownTime>
+        <power>9</power>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Whip================================== -->
+  <ThingDef ParentName="BaseTool_Crafted">
+    <defName>Tool_Whip</defName>
+    <label>whip</label>
+    <description>A strong, flexible cord designed for stinging and restricting. Makes you feel like a movie star.</description>
+    <graphicData>
+      <texPath>Tools/Whip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>40</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>0.8</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <TameAnimalChance>0.75</TameAnimalChance>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>cracker</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <cooldownTime>1.2</cooldownTime>
+        <power>8</power>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================First Aid Kit================================== -->
+  <ThingDef ParentName="BaseTool_Crafted">
+    <defName>Tool_First_Aid_Kit</defName>
+    <label>first aid kit</label>
+    <description>Being prepared and well stocked is the best way to survive. A First Aid Kit and some medicine will take you a long way and save lives with the swiftness of treatment.</description>
+    <graphicData>
+      <texPath>Tools/First_Aid_Kit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Cloth>45</Cloth>
+      <MedicineIndustrial>2</MedicineIndustrial>
+      <Tool_Bandage>1</Tool_Bandage>
+    </costList>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>2.4</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <ImmunityGainSpeed>0.05</ImmunityGainSpeed>
+      <MedicalTendQuality>0.25</MedicalTendQuality>
+      <MedicalTendSpeed>0.75</MedicalTendSpeed>
+    </equippedStatOffsets>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>DrugProduction</researchPrerequisite>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>case</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <cooldownTime>4</cooldownTime>
+        <power>2</power>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Flowers================================== -->
+  <ThingDef ParentName="BaseTool_Crafted">
+    <defName>Tool_Flowers</defName>
+    <label>flowers</label>
+    <description>A bunch of preserved flowers to make someone smile.</description>
+    <graphicData>
+      <texPath>Tools/Flowers</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>5</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>0.5</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.2</SocialImpact>
+      <TradePriceImprovement>0.15</TradePriceImprovement>
+      <NegotiationAbility>0.3</NegotiationAbility>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>thorn</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <cooldownTime>4</cooldownTime>
+        <power>1</power>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Fan================================== -->
+  <ThingDef ParentName="BaseTool_Crafted">
+    <defName>Tool_Fan</defName>
+    <label>fan</label>
+    <description>Keep cool and look cool doing it.</description>
+    <graphicData>
+      <texPath>Tools/Fan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>5</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <Mass>0.2</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <ComfyTemperatureMax>10</ComfyTemperatureMax>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>guard</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <cooldownTime>1.9</cooldownTime>
+        <power>2</power>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Encyclopedia================================== -->
+  <ThingDef ParentName="BaseTool">
+    <defName>Tool_Encyclopedia</defName>
+    <label>encyclopedia</label>
+    <description>A useful compilation of many facts, technologies, and histories. No need to reinvent the wheel, one of these will help speed up your research.</description>
+    <graphicData>
+      <texPath>Tools/Encyclopedia</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>1.2</Mass>
+      <MarketValue>400</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <ResearchSpeed>0.35</ResearchSpeed>
+    </equippedStatOffsets>
+    <techLevel>Industrial</techLevel>
+    <tools>
+      <li>
+        <label>cover</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <cooldownTime>4</cooldownTime>
+        <power>6</power>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================How To================================== -->
+  <ThingDef ParentName="BaseTool">
+    <defName>Tool_How_To</defName>
+    <label>how to for dummies</label>
+    <description>A useful book for teaching your pawns a little more skills.</description>
+    <graphicData>
+      <texPath>Tools/How_To</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.8</Mass>
+      <MarketValue>600</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <GlobalLearningFactor>0.25</GlobalLearningFactor>
+    </equippedStatOffsets>
+    <techLevel>Industrial</techLevel>
+    <tools>
+      <li>
+        <label>cover</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <cooldownTime>4</cooldownTime>
+        <power>4</power>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Coupon Book================================== -->
+  <ThingDef ParentName="BaseTool">
+    <defName>Tool_Coupon_Book</defName>
+    <label>coupon book</label>
+    <description>Save hundreds of dollars on sales, deals and more with this limited time offer. Only valid at participating traders.</description>
+    <graphicData>
+      <texPath>Tools/Coupon_Book</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.8</Mass>
+      <MarketValue>500</MarketValue>
+    </statBases>
+    <equippedStatOffsets>
+      <TradePriceImprovement>0.25</TradePriceImprovement>
+    </equippedStatOffsets>
+    <techLevel>Industrial</techLevel>
+    <tools>
+      <li>
+        <label>cover</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <cooldownTime>4</cooldownTime>
+        <power>1</power>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- Components -->
+  <!-- ============================Laptop================================== -->
+  <ThingDef ParentName="BaseTool_Components">
+    <defName>Tool_Laptop</defName>
+    <label>laptop</label>
+    <description>Comes complete with satellite hookup to the universal answer web, Ding.</description>
+    <graphicData>
+      <texPath>Tools/Laptop</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+      <Plasteel>50</Plasteel>
+      <Gold>25</Gold>
+      <ComponentIndustrial>20</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <Mass>3</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <ResearchSpeed>0.65</ResearchSpeed>
+      <GlobalLearningFactor>0.1</GlobalLearningFactor>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>case</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <cooldownTime>4</cooldownTime>
+        <power>2</power>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- Machined -->
+  <!-- ============================Skill Saw================================== -->
+  <ThingDef ParentName="BaseTool_Machined">
+    <defName>Tool_Skill_Saw</defName>
+    <label>skill saw</label>
+    <description>Cuts through wood like butter, cuts through butter like... well, better not try that.</description>
+    <graphicData>
+      <texPath>Tools/Skill_Saw</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>3.00</PlantWorkSpeed>
+      <ConstructionSpeed>0.3</ConstructionSpeed>
+      <PlantHarvestYield>-0.5</PlantHarvestYield>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>0.6</cooldownTime>
+      </li>
+      <li>
+        <label>Saw</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>34</power>
+        <cooldownTime>5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Brick Saw================================== -->
+  <ThingDef ParentName="BaseTool_Machined">
+    <defName>Tool_Brick_Saw</defName>
+    <label>brick saw</label>
+    <description>Why chisel away slowly when you can slice and dice your way to perfect stone tiles?</description>
+    <graphicData>
+      <texPath>Tools/Brick_Saw</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>8</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <StonecuttingSpeed>2.25</StonecuttingSpeed>
+      <SculptingSpeed>0.5</SculptingSpeed>
+      <ButcheryMechanoidSpeed>0.75</ButcheryMechanoidSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>0.6</cooldownTime>
+      </li>
+      <li>
+        <label>Saw</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>32</power>
+        <cooldownTime>4.4</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Power Drill================================== -->
+  <ThingDef ParentName="BaseTool_Machined">
+    <defName>Tool_Power_Drill</defName>
+    <label>power drill</label>
+    <description>The best and fastest way to build things is just to put a lot of holes in it.</description>
+    <graphicData>
+      <texPath>Tools/Power_Drill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>4</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <ConstructionSpeed>2</ConstructionSpeed>
+      <ConstructSuccessChance>0.5</ConstructSuccessChance>
+      <FixBrokenDownBuildingSuccessChance>0.5</FixBrokenDownBuildingSuccessChance>
+      <ButcheryMechanoidEfficiency>0.3</ButcheryMechanoidEfficiency>
+      <ButcheryMechanoidSpeed>0.35</ButcheryMechanoidSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>0.6</cooldownTime>
+      </li>
+      <li>
+        <label>drill</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>4.8</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Jackhammer================================== -->
+  <ThingDef ParentName="BaseTool_Machined">
+    <defName>Tool_Jackhammer</defName>
+    <label>jackhammer</label>
+    <description>Loud, obnoxious, and extremly good at breaking rocks apart.</description>
+    <graphicData>
+      <texPath>Tools/Jackhammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>100</costStuffCount>
+    <costList>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <Mass>20</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MiningSpeed>2</MiningSpeed>
+      <MiningYield>0.5</MiningYield>
+      <SmoothingSpeed>0.4</SmoothingSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>hammer bit</label>
+        <capacities>
+          <!--Should it be stab or blunt? -->
+          <li>Stab</li>
+        </capacities>
+        <power>52</power>
+        <cooldownTime>8</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- Forged -->
+  <!-- ============================Toolkit================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Toolkit</defName>
+    <label>toolkit</label>
+    <description>Everything you need to make anything you need. Better, faster, handier.</description>
+    <graphicData>
+      <texPath>Tools/Toolkit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <Tool_Saw>1</Tool_Saw>
+      <Tool_Crowbar>1</Tool_Crowbar>
+      <Tool_Hammer>1</Tool_Hammer>
+      <Tool_Sickle>1</Tool_Sickle>
+      <Tool_Pickaxe>1</Tool_Pickaxe>
+      <Tool_Trowel>1</Tool_Trowel>
+      <MeleeWeapon_Knife>1</MeleeWeapon_Knife>
+    </costList>
+    <costStuffCount>30</costStuffCount>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>5</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>case</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Thimble================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Thimble</defName>
+    <label>thimble</label>
+    <description>Less poking means more sewing.</description>
+    <graphicData>
+      <texPath>Tools/Thimble</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>1</costStuffCount>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>0.02</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <TailoringSpeed>0.35</TailoringSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>body</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Whistle================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Whistle</defName>
+    <label>whistle</label>
+    <description>When you blow it, you can't hear anything. But the animals can!</description>
+    <graphicData>
+      <texPath>Tools/Whistle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>1</costStuffCount>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>0.02</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <TrainAnimalChance>0.6</TrainAnimalChance>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>body</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Screwdriver================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Screwdriver</defName>
+    <label>screwdriver</label>
+    <description>Greatly improves the sturdiness and ease of constructing.</description>
+    <graphicData>
+      <texPath>Tools/Screwdriver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>15</costStuffCount>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>0.1</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <ConstructSuccessChance>1</ConstructSuccessChance>
+      <FixBrokenDownBuildingSuccessChance>1</FixBrokenDownBuildingSuccessChance>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- Forged Sharp -->
+  <!-- ============================Axe================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Axe</defName>
+    <label>axe</label>
+    <description>Used for cutting down plants, but not planting them.</description>
+    <graphicData>
+      <texPath>Tools/Axe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>1.2</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.4</PlantWorkSpeed>
+      <PlantHarvestYield>-1</PlantHarvestYield>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Saw================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Saw</defName>
+    <label>saw</label>
+    <description>Used for cutting down plants, but not planting them.</description>
+    <graphicData>
+      <texPath>Tools/Saw</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>0.8</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.5</PlantWorkSpeed>
+      <PlantHarvestYield>-0.25</PlantHarvestYield>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>0.5</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Chisel================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Chisel</defName>
+    <label>chisel</label>
+    <description>Stoneworkers and artists alike prize the ability to make accurate cuts on their materials.</description>
+    <graphicData>
+      <texPath>Tools/Chisel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <statBases>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>0.7</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <StonecuttingSpeed>0.35</StonecuttingSpeed>
+      <SculptingSpeed>0.35</SculptingSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>0.5</cooldownTime>
+      </li>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Fork================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Fork</defName>
+    <label>fork</label>
+    <description>The building block of society, it's much easier to eat with one of these.</description>
+    <graphicData>
+      <texPath>Tools/Fork</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>10</costStuffCount>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>0.06</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <EatingSpeed>1</EatingSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>prong</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Chefs Knife================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Chefs_Knife</defName>
+    <label>chefs knife</label>
+    <description>A sharp knife with a keen edge, curved for easy chopping of vegetables.</description>
+    <graphicData>
+      <texPath>Tools/Chefs_Knife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>40</costStuffCount>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>0.6</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <CookSpeed>0.35</CookSpeed>
+      <FoodPoisonChance>-0.2</FoodPoisonChance>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Cleaver================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Cleaver</defName>
+    <label>cleaver</label>
+    <description>A broad bladed knife designed for chopping through bones and separating meat.</description>
+    <graphicData>
+      <texPath>Tools/Cleaver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>55</costStuffCount>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>0.8</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <ButcheryFleshSpeed>0.35</ButcheryFleshSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Skinning Knife================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Skinning_Knife</defName>
+    <label>skinning knife</label>
+    <description>A thin bladed flexible knife, designed to swiftly and efficiently remove skin from a carcass.</description>
+    <graphicData>
+      <texPath>Tools/Skinning_Knife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>40</costStuffCount>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>0.6</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <ButcheryFleshEfficiency>0.3</ButcheryFleshEfficiency>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Pickaxe================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Pickaxe</defName>
+    <label>pickaxe</label>
+    <description>Pointed double sided pick, designed for breaking apart rocks and pulling free minerals.</description>
+    <graphicData>
+      <texPath>Tools/Pickaxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>70</costStuffCount>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MiningSpeed>0.35</MiningSpeed>
+      <MiningYield>0.25</MiningYield>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Scalpel================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Scapel</defName>
+    <label>scalpel</label>
+    <description>Stainless steel, a sharp and sterile blade designed for fine delicate work.</description>
+    <graphicData>
+      <texPath>Tools/Scalpel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>20</costStuffCount>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>0.1</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MedicalSurgerySuccessChance>0.2</MedicalSurgerySuccessChance>
+      <MedicalOperationSpeed>0.5</MedicalOperationSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>0.8</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Sickle================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Sickle</defName>
+    <label>sickle</label>
+    <description>A sharp curved hook, used for gathering plants and harvesting grains.</description>
+    <graphicData>
+      <texPath>Tools/Sickle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>65</costStuffCount>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <Mass>0.4</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <PlantHarvestYield>0.25</PlantHarvestYield>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Scythe================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Scythe</defName>
+    <label>scythe</label>
+    <description>A long handled curved blade, for reaping plants.</description>
+    <graphicData>
+      <texPath>Tools/Scythe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>120</costStuffCount>
+    <statBases>
+      <WorkToMake>22000</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <PlantHarvestYield>0.4</PlantHarvestYield>
+      <PlantWorkSpeed>0.1</PlantWorkSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- Forged Blunt -->
+  <!-- ============================Crowbar================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Crowbar</defName>
+    <label>crowbar</label>
+    <description>Good for fighting headcrabs, opening crates, or prying open mechs.</description>
+    <graphicData>
+      <texPath>Tools/Crowbar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>35</costStuffCount>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>0.8</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <ButcheryMechanoidEfficiency>0.1</ButcheryMechanoidEfficiency>
+      <ButcheryMechanoidSpeed>0.25</ButcheryMechanoidSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+      <li>
+        <label>chisel</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Forge Hammer================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Forge_Hammer</defName>
+    <label>forge hammer</label>
+    <description>A massive hammer requiring massive strength, to bring down onto an anvil.</description>
+    <graphicData>
+      <texPath>Tools/Forge_Hammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>80</costStuffCount>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>1.6</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <SmithingSpeed>0.35</SmithingSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.1</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2.95</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Spoon================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Spoon</defName>
+    <label>spoon</label>
+    <description>A spoon is as good as a fork in every way, but better with soup.</description>
+    <graphicData>
+      <texPath>Tools/Spoon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>10</costStuffCount>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>0.06</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <EatingSpeed>1</EatingSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Trowel================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Trowel</defName>
+    <label>trowel</label>
+    <description>A tool for filling in pitted ground with smooth and beautiful fill.</description>
+    <graphicData>
+      <texPath>Tools/Trowel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>0.5</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <SmoothingSpeed>1</SmoothingSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>0.7</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.4</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Shovel================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Shovel</defName>
+    <label>shovel</label>
+    <description>A digging tool that makes moving earth much easier.</description>
+    <graphicData>
+      <texPath>Tools/Shovel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>65</costStuffCount>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.15</PlantWorkSpeed>
+      <PlantHarvestYield>-0.2</PlantHarvestYield>
+      <MiningSpeed>0.15</MiningSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================Hammer================================== -->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Hammer</defName>
+    <label>hammer</label>
+    <description>A small, easy to hold hammer perfect for driving in nails.</description>
+    <graphicData>
+      <texPath>Tools/Hammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>40</costStuffCount>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>0.6</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <ConstructionSpeed>0.25</ConstructionSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.1</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!--Animal Husbandry kit-->
+  <ThingDef ParentName="BaseTool_Forged">
+    <defName>Tool_Animal_Husbandry</defName>
+    <label>Animal husbandry tool</label>
+    <description>Bucket, milk pump and shear for animal husbadry needs. The milk pump is inside the bucket.</description>
+    <graphicData>
+      <texPath>Tools/Bucket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>40</costStuffCount>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>0.8</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <AnimalGatherSpeed>0.75</AnimalGatherSpeed>
+      <AnimalGatherYield>0.25</AnimalGatherYield>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>Bucket</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>

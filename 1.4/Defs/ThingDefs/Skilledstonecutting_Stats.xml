@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Taken from PinoChemicali stonecutting-->
+<Defs>
+  <StatDef>
+    <defName>StonecuttingSpeed</defName>
+    <label>stonecutting speed</label>
+    <description>Speed at which this person cuts rough stone into blocks.</description>
+    <category>PawnWork</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <statFactors>
+      <li>WorkSpeedGlobal</li>
+    </statFactors>
+  </StatDef>
+</Defs>

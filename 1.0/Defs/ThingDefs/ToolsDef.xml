@@ -1,25 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef Name="BaseTool" Abstract="True">
-    <category>Item</category>
-    <thingClass>ThingWithComps</thingClass>
-    <equipmentType>Primary</equipmentType>
+  <ThingDef Name="BaseTool" ParentName="BaseWeapon" Abstract="True">
     <pathCost>10</pathCost>
-    <useHitPoints>True</useHitPoints>
-    <selectable>True</selectable>
-    <graphicData>
-      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
-    </graphicData>
-    <drawGUIOverlay>true</drawGUIOverlay>
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0.1</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
       <SellPriceFactor>0.25</SellPriceFactor>
     </statBases>
-    <altitudeLayer>Item</altitudeLayer>
-    <alwaysHaulable>True</alwaysHaulable>
-    <tickerType>Never</tickerType>
     <weaponTags>
       <li>Melee</li>
       <li>Tool</li>
@@ -27,12 +14,6 @@
     <thingCategories>
       <li>Tools</li>
     </thingCategories>
-    <comps>
-      <li Class="CompProperties_Forbiddable" />
-      <li>
-        <compClass>CompEquippable</compClass>
-      </li>
-    </comps>
     <inspectorTabs>
       <li>ITab_Art</li>
     </inspectorTabs>

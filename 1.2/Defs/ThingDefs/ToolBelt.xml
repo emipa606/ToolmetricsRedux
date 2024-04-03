@@ -1,33 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef Name="TM_BaseToolBelt" Abstract="True">
-    <thingClass>Apparel</thingClass>
-    <category>Item</category>
-    <selectable>True</selectable>
+  <ThingDef Name="TM_BaseToolBelt" ParentName="ApparelNoQualityBase" Abstract="True">
     <pathCost>10</pathCost>
-    <useHitPoints>True</useHitPoints>
-    <drawGUIOverlay>true</drawGUIOverlay>
     <statBases>
       <MaxHitPoints>125</MaxHitPoints>
-      <Flammability>1.0</Flammability>
       <DeteriorationRate>0.5</DeteriorationRate>
       <SellPriceFactor>0.4</SellPriceFactor>
       <WorkToMake>5000</WorkToMake>
     </statBases>
-    <altitudeLayer>Item</altitudeLayer>
-    <alwaysHaulable>True</alwaysHaulable>
-    <tickerType>Never</tickerType>
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
-    <comps>
-      <li>
-        <compClass>CompForbiddable</compClass>
-      </li>
-      <li>
-        <compClass>CompColorable</compClass>
-      </li>
-    </comps>
     <techLevel>Industrial</techLevel>
     <!--Every tool belt needs fabric for the belt + pouch-->
     <costStuffCount>30</costStuffCount>
