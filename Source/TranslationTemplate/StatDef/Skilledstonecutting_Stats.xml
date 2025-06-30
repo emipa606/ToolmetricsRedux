@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: stonecutting speed -->
+  <StonecuttingSpeed.label>stonecutting speed</StonecuttingSpeed.label>
+  <!-- EN: Speed at which this person cuts rough stone into blocks. -->
+  <StonecuttingSpeed.description>Speed at which this person cuts rough stone into blocks.</StonecuttingSpeed.description>
+</LanguageData>

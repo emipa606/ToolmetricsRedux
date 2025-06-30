@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef Name="TM_BaseToolBelt" ParentName="ApparelBase" Abstract="True">
     <pathCost>10</pathCost>

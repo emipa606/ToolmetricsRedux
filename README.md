@@ -1,4 +1,4 @@
-# ToolmetricsRedux
+# [Toolmetrics Redux (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2027628615)
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
@@ -8,13 +8,11 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1526599749
 Excellent guide made by Psyra:
 https://steamcommunity.com/sharedfiles/filedetails/?id=2060184114
 
-- [strike]Added CE support based on https://steamcommunity.com/sharedfiles/filedetails/?id=1667299291]Toolmetric CE Patch by Shadowpaw[/strike] CE-patches now included in the main CE-mod instead
+- ~~Added CE support based on [Toolmetric CE Patch](https://steamcommunity.com/sharedfiles/filedetails/?id=1667299291) by Shadowpaw~~ CE-patches now included in the main CE-mod instead
 
 ![Image](https://i.imgur.com/pufA0kM.png)
-
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
-
 
 Work Tools for Pawns
 This mod adds 41 weapon-slot hand tools aimed at non-combat usage for pawns to equip. 
@@ -87,13 +85,12 @@ I hereby will be allowing my work to be continued and published by other. I ask 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
+-  Post your error-log using [HugsLib](https://steamcommunity.com/workshop/filedetails/?id=818773962) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
--  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
+-  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
+ 
 
-
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2027628615]![Image](https://img.shields.io/github/v/release/emipa606/ToolmetricsRedux?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
-
+[![Image](https://img.shields.io/github/v/release/emipa606/ToolmetricsRedux?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2027628615) | tags:  equip

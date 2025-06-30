@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Animal Kit -->
+  <TM_Animal_Kit.label>Animal Kit</TM_Animal_Kit.label>
+  <!-- EN: All your animal training, taming and husbandry need. -->
+  <TM_Animal_Kit.description>All your animal training, taming and husbandry need.</TM_Animal_Kit.description>
+  <!-- EN: Chef Kit -->
+  <TM_Chef_Kit.label>Chef Kit</TM_Chef_Kit.label>
+  <!-- EN: Belt contain all your chef needs. -->
+  <TM_Chef_Kit.description>Belt contain all your chef needs.</TM_Chef_Kit.description>
+  <!-- EN: Chemistry Kit -->
+  <TM_Chemistry_Kit.label>Chemistry Kit</TM_Chemistry_Kit.label>
+  <!-- EN: Contains flasks, beaker, stirrer, catalyst and heating plate. Great for speeding up brewing and drug making. -->
+  <TM_Chemistry_Kit.description>Contains flasks, beaker, stirrer, catalyst and heating plate. Great for speeding up brewing and drug making.</TM_Chemistry_Kit.description>
+  <!-- EN: Combat Kit -->
+  <TM_Combat_Kit.label>Combat Kit</TM_Combat_Kit.label>
+  <!-- EN: Consist of holster, ammo belt and weapon maintenance kit. Give some edge in combat -->
+  <TM_Combat_Kit.description>Consist of holster, ammo belt and weapon maintenance kit. Give some edge in combat</TM_Combat_Kit.description>
+  <!-- EN: Constructor Kit -->
+  <TM_Constructor_Kit.label>Constructor Kit</TM_Constructor_Kit.label>
+  <!-- EN: Belt contain all your construction and mining need. -->
+  <TM_Constructor_Kit.description>Belt contain all your construction and mining need.</TM_Constructor_Kit.description>
+  <!-- EN: Cook Kit -->
+  <TM_Cook_Kit.label>Cook Kit</TM_Cook_Kit.label>
+  <!-- EN: Make drug and food faster. -->
+  <TM_Cook_Kit.description>Make drug and food faster.</TM_Cook_Kit.description>
+  <!-- EN: Crafting Kit -->
+  <TM_Crafting_Kit.label>Crafting Kit</TM_Crafting_Kit.label>
+  <!-- EN: Belt contain tools to assist in crafting and forging. -->
+  <TM_Crafting_Kit.description>Belt contain tools to assist in crafting and forging.</TM_Crafting_Kit.description>
+  <!-- EN: Doctor Kit -->
+  <TM_Doctor_Kit.label>Doctor Kit</TM_Doctor_Kit.label>
+  <!-- EN: An upgrade to first aid kit, free up your hand. -->
+  <TM_Doctor_Kit.description>An upgrade to first aid kit, free up your hand.</TM_Doctor_Kit.description>
+  <!-- EN: Garden Kit -->
+  <TM_Garden_Kit.label>Garden Kit</TM_Garden_Kit.label>
+  <!-- EN: This kit contain all your gardening needs. -->
+  <TM_Garden_Kit.description>This kit contain all your gardening needs.</TM_Garden_Kit.description>
+  <!-- EN: Social Wear -->
+  <TM_Social_Wear.label>Social Wear</TM_Social_Wear.label>
+  <!-- EN: Social wear that helps with socialising and walking. -->
+  <TM_Social_Wear.description>Social wear that helps with socialising and walking.</TM_Social_Wear.description>
+  <!-- EN: Tool Belt -->
+  <TM_Tool_Belt.label>Tool Belt</TM_Tool_Belt.label>
+  <!-- EN: General purpose belt, it allows to perform task faster but provide no further bonuses. -->
+  <TM_Tool_Belt.description>General purpose belt, it allows to perform task faster but provide no further bonuses.</TM_Tool_Belt.description>
+  <!-- EN: Traveler pack -->
+  <TM_Traveler_Pack.label>Traveler pack</TM_Traveler_Pack.label>
+  <!-- EN: All your personal comfort need in one pack, great for journey. -->
+  <TM_Traveler_Pack.description>All your personal comfort need in one pack, great for journey.</TM_Traveler_Pack.description>
+  <!-- EN: backpack -->
+  <Tool_Backpack.label>backpack</Tool_Backpack.label>
+  <!-- EN: An extra bag that you can carry with you to help you move more things. -->
+  <Tool_Backpack.description>An extra bag that you can carry with you to help you move more things.</Tool_Backpack.description>
+  <!-- EN: duffel bag -->
+  <Tool_Duffel_Bag.label>duffel bag</Tool_Duffel_Bag.label>
+  <!-- EN: A large bag you can use to carry many more things, but it's a little awkward. -->
+  <Tool_Duffel_Bag.description>A large bag you can use to carry many more things, but it's a little awkward.</Tool_Duffel_Bag.description>
+  <!-- EN: smartphone -->
+  <Tool_Smartphone.label>smartphone</Tool_Smartphone.label>
+  <!-- EN: Smartphones are cheap, portable, and widely available, but your pawns might have problems letting go. -->
+  <Tool_Smartphone.description>Smartphones are cheap, portable, and widely available, but your pawns might have problems letting go.</Tool_Smartphone.description>
+</LanguageData>

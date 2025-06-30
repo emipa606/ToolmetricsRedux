@@ -1,0 +1,71 @@
+ManifestFileVersion: 0
+CRC: 1549222106
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7f6f4c60d3d4ae90e509b084931c95ea
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 7f6f4c60d3d4ae90e509b084931c95ea
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Toolkit.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/TM_DoctorKit.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Bandage.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Fan.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Coupon_Book.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Leash.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/TM_CombatKit.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Forge_Hammer.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Chisel.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Duffel_Bag.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Skinning_Knife.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Axe.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/TM_CookBelt.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/TM_SocialWear.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Backpack.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Chefs_Knife.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/TM_ConstructorBelt.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Whip.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Pillow.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Trowel.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Shovel.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/ToolBelt_Generic.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Skill_Saw.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Sickle.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Brick_Saw.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Laptop.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/TM_ChefBelt.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Screwdriver.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Bucket.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Encyclopedia.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Blanket.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Pickaxe.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Flowers.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Power_Drill.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Walking_Cane.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Cleaver.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/How_To.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/First_Aid_Kit.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/TM_AnimalBelt.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/TM_TravelerPack.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Spoon.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Jackhammer.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Smartphone.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Whistle.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Thimble.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/TM_GardenKit.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Fork.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Hammer.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Scythe.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Saw.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Crowbar.png
+- Assets/Data/Mlie.ToolmetricsRedux/Textures/Tools/Scalpel.png
+Dependencies: []
