@@ -1,6 +1,6 @@
 # [Toolmetrics Redux (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2027628615)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of Chronometrics,Porter: BrokenValkyries mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1526599749
@@ -10,9 +10,9 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2060184114
 
 - ~~Added CE support based on [Toolmetric CE Patch](https://steamcommunity.com/sharedfiles/filedetails/?id=1667299291) by Shadowpaw~~ CE-patches now included in the main CE-mod instead
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 Work Tools for Pawns
 This mod adds 41 weapon-slot hand tools aimed at non-combat usage for pawns to equip. 
@@ -79,13 +79,13 @@ Given my current work schedule and lack of motivation I decided I am unable to c
 I hereby will be allowing my work to be continued and published by other. I ask only for credit. This will apply to all my current workshop.
 
 
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using [HugsLib](https://steamcommunity.com/workshop/filedetails/?id=818773962) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
@@ -93,4 +93,4 @@ I hereby will be allowing my work to be continued and published by other. I ask 
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/ToolmetricsRedux?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2027628615) | tags:  equip
+[![Image](https://img.shields.io/github/v/release/emipa606/ToolmetricsRedux?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2027628615) | tags: equip
