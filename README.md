@@ -93,4 +93,4 @@ I hereby will be allowing my work to be continued and published by other. I ask 
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/ToolmetricsRedux?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2027628615) | tags: equip
+[![Image](https://img.shields.io/github/v/release/emipa606/ToolmetricsRedux?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2027628615) | equip
